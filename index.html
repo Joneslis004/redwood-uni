@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>RedWood University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img 
+    src="images/logo1x.png" 
+    srcset="images/logo2x.png 2x, images/logo3x.png 3x" 
+    width="50" 
+    height="50" 
+    alt="Company Logo">
+		<span>Redwood University</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005;</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programs</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Tuition</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <h1>Apply to Redwood University</h1>
+
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Please"></label>
+            <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here"></label>
+        
+
+            <h3>Optional Contact Information</h3>
+            <label>Address: 
+                <input type="text" name="address" autocomplete="street-address">
+            </label>
+
+            <label>City: 
+                <input type="text" name="city" autocomplete="address-level2">
+            </label>
+
+            <label>State: 
+                <input type="text" name="state" maxlength="2" autocomplete="address-level1" placeholder="UT">
+            </label>
+
+            <label>Zip: 
+                <input type="text" name="zip" pattern="[0-9]{5}" title="5-digit ZIP code">
+            </label>
+
+             <h3>Preferred Communication</h3>
+            <label><input type="radio" name="contactpref" value="email" required>Email</label>
+            <label><input type="radio" name="contactpref" value="phone">Phone</label>
+            <label><input type="radio" name="contactpref" value="text">Text</label>
+
+  <h3>Previous School</h3>
+            <label>
+                <select name="prevschool" required>
+                    <option value="">Please Select</option>
+                    <option value="east-high">East High School</option>
+                    <option value="west-high">West High School</option>
+                    <option value="north-high">North High School</option>
+                    <option value="south-high">South High School</option>
+                </select>
+            </label>
+
+  <!-- GRADUATION DATE -->
+            <h3>High School Graduation Date</h3>
+            <label>Graduation Date:
+                <input type="date" name="gradDate" required>
+            </label>
+
+             <!-- EDUCATION COMPLETED -->
+            <h3>Education Completed</h3>
+            <label><input type="checkbox" name="ged">GED</label>
+            <label><input type="checkbox" name="hsDiploma">High School Diploma</label>
+            <label><input type="checkbox" name="assoc">Associate Degree</label>
+            <label><input type="checkbox" name="bachelor">Bachelor’s Degree</label>
+
+
+  <!-- USERNAME / PASSWORD -->
+            <h3>Account Setup</h3>
+            <label>Username (5–10 letters only):
+                <input type="text" name="username" pattern="[A-Za-z]{5,10}" required title="5–10 letters, no numbers or symbols">
+            </label>
+
+            <label>Password (6+ characters):
+                <input type="password" name="password" minlength="6" required title="At least 6 characters">
+            </label>
+
+<input type="submit" value="Submit your Application" class="btn-primary">
+
+        </form>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2025 Lisette Jones <br>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
